@@ -1,0 +1,31 @@
+{
+  "name": "hdp",
+  "version": "1.0.0",
+  "description": "Haskey Development Program",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bartw/hdp.git"
+  },
+  "author": "Bart Wijnants",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bartw/hdp/issues"
+  },
+  "homepage": "https://github.com/bartw/hdp#readme",
+  "dependencies": {
+    "gatsby": "^2.18.5",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  }
+}
