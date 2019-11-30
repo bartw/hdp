@@ -21,9 +21,12 @@
   },
   "homepage": "https://github.com/bartw/hdp#readme",
   "dependencies": {
+    "bulma": "^0.8.0",
     "gatsby": "^2.18.5",
     "gatsby-plugin-manifest": "^2.2.30",
     "gatsby-plugin-react-helmet": "^3.1.16",
+    "gatsby-plugin-sass": "^2.1.24",
+    "node-sass": "^4.13.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1"
