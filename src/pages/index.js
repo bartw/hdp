@@ -1,14 +1,9 @@
 import React from "react";
-import { Helmet } from "react-helmet";
-import "./index.scss";
+import Layout from "../components/layout";
 
 export default () => (
-  <>
-    <Helmet>
-      <title>HDP</title>
-      <meta name="description" content="Haskey Development Program" />
-    </Helmet>
-    <section className="hero is-primary is-fullheight">
+  <Layout>
+    <section className="hero is-primary">
       <div className="hero-body">
         <div className="container has-text-centered">
           <h1 className="title">HDP</h1>
@@ -16,5 +11,53 @@ export default () => (
         </div>
       </div>
     </section>
-  </>
+    <section className="section">
+      <div className="container">
+        <h1 className="title">Vision</h1>
+        <div className="content">
+          <p>
+            We want to create an environment where kids can learn to play hockey
+            and at the same time learn how to behave in group situations. The
+            kids should grow both physically and mentally.
+          </p>
+          <p>
+            Everyone should have fun on and off the ice. Kids should be enabled
+            to learn at their own pace, without pressure but with enough
+            challenges to grow.
+          </p>
+          <p>
+            We want to create teams that know how to win and how to lose. Teams
+            where indiviuals stand up for each other but always stay respectful.
+          </p>
+          <p>
+            All this should be done in a transparant way for all stakeholders.
+            Parents, coaches, the board and the kids.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section className="section">
+      <div className="container">
+        <h1 className="title">Goal</h1>
+        <div className="content">
+          <p>
+            The goal of this development program is to create a baseline for all
+            Haskey coaches.
+          </p>
+          <p>
+            The development program is a living document and can receive input
+            from all stakeholders.
+          </p>
+          <p>
+            We want each coach to teach skills and tactics in a consistent way.
+          </p>
+          <p>
+            If we follow the principles, stay true to our goals and realize our
+            vision, we will have created an identity that people associate with
+            Haskey. This Haskey DNA will help the club grow.
+          </p>
+        </div>
+      </div>
+    </section>
+  </Layout>
 );
