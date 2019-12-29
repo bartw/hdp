@@ -62,15 +62,15 @@ export default () => (
     <section className="section">
       <div className="container">
         <h1 className="title">Coaching Principles</h1>
-        <ul className="list">
-          <li className="list-item">Enthusiastic</li>
-          <li className="list-item">Positive</li>
-          <li className="list-item">Demanding But Considerate</li>
-          <li className="list-item">Consistent</li>
-          <li className="list-item">Listen To The Players</li>
-          <li className="list-item">Effective And Constructive Feedback</li>
-          <li className="list-item">Treat Each Player As An Individual</li>
-          <li className="list-item">Everyone Is Equal</li>
+        <ul>
+          <li>Enthusiastic</li>
+          <li>Positive</li>
+          <li>Demanding But Considerate</li>
+          <li>Consistent</li>
+          <li>Listen To The Players</li>
+          <li>Effective And Constructive Feedback</li>
+          <li>Treat Each Player As An Individual</li>
+          <li>Everyone Is Equal</li>
         </ul>
       </div>
     </section>
