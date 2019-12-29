@@ -1,34 +1,24 @@
 import React from "react";
 import Layout from "../components/layout";
+import tactics from "../data/tactics";
 
 export default () => (
   <Layout>
     <section className="section">
       <div className="container">
         <h1 className="title">Tactics</h1>
-        <div className="panel is-primary">
-          <header className="panel-heading">Offensive</header>
-          <div className="panel-block">
-            <ul>
-              <li>Breakout</li>
-              <li>Triangle</li>
-              <li>One On One</li>
-              <li>Rebound</li>
-            </ul>
+        {tactics.map(({ id, label, items }) => (
+          <div key={id} className="panel is-primary">
+            <header className="panel-heading">{label}</header>
+            <div className="panel-block">
+              <ul>
+                {items.map(({ id, label }) => (
+                  <li key={id}>{label}</li>
+                ))}
+              </ul>
+            </div>
           </div>
-        </div>
-        <div className="panel is-primary">
-          <header className="panel-heading">Defensive</header>
-          <div className="panel-block">
-            <ul>
-              <li>Passing Lane</li>
-              <li>Backcheck</li>
-              <li>One On One</li>
-              <li>Rebound</li>
-              <li>Forecheck</li>
-            </ul>
-          </div>
-        </div>
+        ))}
       </div>
     </section>
   </Layout>
