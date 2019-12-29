@@ -3,7 +3,17 @@ export default [
     id: "skills_skating",
     label: "Skating",
     items: [
-      { id: "skills_skating_ready_stance", label: "Ready Stance" },
+      {
+        id: "skills_skating_ready_stance",
+        label: "Ready Stance",
+        teachingPoints: [
+          "Feet shoulder width apart, pointing forward.",
+          "Knees and ankles flexed at approximatly 45 degrees.",
+          "Straight upper body.",
+          "Head up, look forward.",
+          "One hand on the stick, stick on the ice."
+        ]
+      },
       { id: "skills_skating_knees_belly", label: "Knees/Belly" },
       { id: "skills_skating_edges", label: "Edges" },
       { id: "skills_skating_forward_stride", label: "Forward Stride" },
