@@ -13,8 +13,8 @@ export default () => (
     </section>
     <section className="section">
       <div className="container">
-        <h1 className="title">Vision</h1>
         <div className="content">
+          <h2 className="subtitle">Vision</h2>
           <p>
             We want to create an environment where kids can learn to play hockey
             and at the same time learn how to behave in group situations. The
@@ -34,12 +34,8 @@ export default () => (
             Parents, coaches, the board and the kids.
           </p>
         </div>
-      </div>
-    </section>
-    <section className="section">
-      <div className="container">
-        <h1 className="title">Goal</h1>
         <div className="content">
+          <h2 className="subtitle">Goal</h2>
           <p>
             The goal of this development program is to create a baseline for all
             Haskey coaches.
@@ -57,21 +53,19 @@ export default () => (
             Haskey. This Haskey DNA will help the club grow.
           </p>
         </div>
-      </div>
-    </section>
-    <section className="section">
-      <div className="container">
-        <h1 className="title">Coaching Principles</h1>
-        <ul>
-          <li>Enthusiastic</li>
-          <li>Positive</li>
-          <li>Demanding But Considerate</li>
-          <li>Consistent</li>
-          <li>Listen To The Players</li>
-          <li>Effective And Constructive Feedback</li>
-          <li>Treat Each Player As An Individual</li>
-          <li>Everyone Is Equal</li>
-        </ul>
+        <div className="content">
+          <h2 className="subtitle">Coaching Principles</h2>
+          <ul>
+            <li>Enthusiastic</li>
+            <li>Positive</li>
+            <li>Demanding But Considerate</li>
+            <li>Consistent</li>
+            <li>Listen To The Players</li>
+            <li>Effective And Constructive Feedback</li>
+            <li>Treat Each Player As An Individual</li>
+            <li>Everyone Is Equal</li>
+          </ul>
+        </div>
       </div>
     </section>
   </Layout>
