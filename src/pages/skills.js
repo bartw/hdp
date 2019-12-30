@@ -49,7 +49,11 @@ const Skills = ({ active, detail, activate, showDetail, hideDetail }) => (
           <ul>
             {active.items.map(skill => (
               <li key={skill.id}>
-                <a onClick={() => showDetail(skill)}>{skill.label}</a>
+                {skill.teachingPoints && skill.teachingPoints.length ? (
+                  <a onClick={() => showDetail(skill)}>{skill.label}</a>
+                ) : (
+                  skill.label
+                )}
               </li>
             ))}
           </ul>
