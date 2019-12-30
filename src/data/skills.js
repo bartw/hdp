@@ -14,9 +14,25 @@ export default [
           "One hand on the stick, stick on the ice."
         ]
       },
-      { id: "skills_skating_knees_belly", label: "Knees/Belly" },
-      { id: "skills_skating_edges", label: "Edges" },
-      { id: "skills_skating_forward_stride", label: "Forward Stride" },
+      {
+        id: "skills_skating_knees_belly",
+        label: "Knees/Belly",
+        teachingPoints: [
+          "Look forward",
+          "One hand on the stick, point forward, on the ice",
+          "Don't stop"
+        ]
+      },
+      {
+        id: "skills_skating_edges",
+        label: "Edges",
+        teachingPoints: ["Inside edge", "Outside edge"]
+      },
+      {
+        id: "skills_skating_forward_stride",
+        label: "Forward Stride",
+        teachingPoints: ["Stride", "Point", "Return", "Hips low"]
+      },
       { id: "skills_skating_forward_starts", label: "Forward Starts" },
       { id: "skills_skating_hockey_stop", label: "Hockey Stop" },
       { id: "skills_skating_sharp_turns", label: "Sharp Turns" },
@@ -66,7 +82,15 @@ export default [
     id: "skills_shooting",
     label: "Shooting",
     items: [
-      { id: "skills_shooting_wrist_shot", label: "Wrist Shot" },
+      {
+        id: "skills_shooting_wrist_shot",
+        label: "Wrist Shot",
+        teachingPoints: [
+          "Transfer weight",
+          "Puck starts at the heel",
+          "Follow through"
+        ]
+      },
       { id: "skills_shooting_backhand_shot", label: "Backhand Shot" },
       { id: "skills_shooting_snap_shot", label: "Snap Shot" },
       { id: "skills_shooting_flip_shot", label: "Flip Shot" },
