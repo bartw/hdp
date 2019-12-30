@@ -2,34 +2,59 @@ import React, { Component } from "react";
 import Layout from "../components/layout";
 import skills from "../data/skills";
 
-const SkillDetail = ({ skill: { label, teachingPoints }, hideDetail }) => (
-  <div className="modal is-active">
-    <div className="modal-background"></div>
-    <div className="modal-card">
-      <header className="modal-card-head">
-        <p className="modal-card-title">{label}</p>
-        <button className="delete" aria-label="close" onClick={hideDetail}>
-          >
-        </button>
-      </header>
-      <section className="modal-card-body">
-        <h2 className="subtitle">Teaching Points</h2>
-        <ul>
-          {teachingPoints &&
-            teachingPoints.length &&
-            teachingPoints.map(teachingPoint => (
-              <li key={teachingPoint}>{teachingPoint}</li>
-            ))}
-        </ul>
-      </section>
-      <footer className="modal-card-foot">
-        <button className="button" onClick={hideDetail}>
-          Close
-        </button>
-      </footer>
-    </div>
-  </div>
-);
+class SkillDetail extends Component {
+  componentDidMount() {
+    document.addEventListener("keydown", this.handleKeyPress, false);
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener("keydown", this.handleKeyPress, false);
+  }
+
+  handleKeyPress = event => {
+    // Escape
+    if (event.keyCode === 27) {
+      const { hideDetail } = this.props;
+      hideDetail();
+    }
+  };
+
+  render() {
+    const {
+      skill: { label, teachingPoints },
+      hideDetail
+    } = this.props;
+
+    return (
+      <div className="modal is-active">
+        <div className="modal-background"></div>
+        <div className="modal-card">
+          <header className="modal-card-head">
+            <p className="modal-card-title">{label}</p>
+            <button className="delete" aria-label="close" onClick={hideDetail}>
+              >
+            </button>
+          </header>
+          <section className="modal-card-body">
+            <h2 className="subtitle">Teaching Points</h2>
+            <ul>
+              {teachingPoints &&
+                teachingPoints.length &&
+                teachingPoints.map(teachingPoint => (
+                  <li key={teachingPoint}>{teachingPoint}</li>
+                ))}
+            </ul>
+          </section>
+          <footer className="modal-card-foot">
+            <button className="button" onClick={hideDetail}>
+              Close
+            </button>
+          </footer>
+        </div>
+      </div>
+    );
+  }
+}
 
 const Skills = ({ active, detail, activate, showDetail, hideDetail }) => (
   <Layout>
